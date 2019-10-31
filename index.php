@@ -1,24 +1,19 @@
 <?php
-$string = 'Labas PHP!';
-$integer = 153;
-$boolean = true;
-$null = null;
-
-$li_1 = "$string";
-$li_2 = "$integer";
-$li_3 = "$boolean";
-$li_4 = "$null";
+$img_src = 'https://seethefullpicture.ca/wp-content/uploads/2019/06/Alcon_SeeTheFullPicture_Website_1901x11252.jpg';
 ?>
 <html>
     <head>
         <title>PHP</title>
+        <style>
+            img{width: 200px;
+                height: 200px;
+            }
+        </style>
     </head>
     <body>
-        <ul>
-            <li><?php print $li_1 ?></li>
-            <li><?php print $li_2 ?></li>
-            <li><?php print $li_3 ?></li>
-            <li><?php print $li_4 ?></li>
-        </ul>
+        <img src="<?php print $img_src; ?>">
+        <img src="<?php print $img_src; ?>">
+        <img src="<?php print $img_src; ?>">
+        <img src="<?php print $img_src; ?>">
     </body>
 </html>
