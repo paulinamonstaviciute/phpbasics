@@ -1,25 +1,38 @@
 <?php
 
-$months=12;
-$wallet=1000;
-$month_income =700;
+$days = 365;
+$pack_price = 3.50;
+$count_ttl = 0;
+$time_per_cig = 5;
 
-for($x=1; $x<=$months; $x++){
-    $month_expences=rand(1,1700);
-    $wallet=$wallet+$month_income-$month_expences;
-    if($wallet<0) {
-        break;
+for ($d = 0; $d < $days; $d++) {
+    $weekday = date('N', strtotime("+$d day"));
+
+    if ($weekday == 6) {
+        $cigs_sat = rand(10, 20);
+        $count_ttl += $cigs_sat;
+    } elseif ($weekday == 7) {
+        $cigs_sun = rand(1, 3);
+        $count_ttl += $cigs_sun;
+    } else {
+        $cigs_mon_fri = rand(3, 4);
+        $count_ttl += $cigs_mon_fri;
     }
 }
-$h1 = ' Wallet forecast ';
-$h2 = " Atsargiai, $x mėnesį gali baigtis pinigai";
 
+$price_ttl = ceil($count_ttl / 20) * $pack_price;
+$time_total = ceil($time_per_cig * $count_ttl / 60);
+
+$h1 = 'Mano dumu skaiciuokle';
+$h2 = "Per $days dienas, surukysiu $count_ttl cigareciu uz $price_ttl eur.";
+$h3 = "Viso traukdamas prastovėsiu $time_total valandų"
+        
 ?>
 <html>
-    <head>
-    </head>
     <body>
         <h1><?php print $h1; ?></h1>
         <h2><?php print $h2; ?></h2>
+        <h3><?php print $h3; ?></h3>
+
     </body>
 </html>
