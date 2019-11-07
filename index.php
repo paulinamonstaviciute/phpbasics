@@ -1,26 +1,17 @@
 <?php
 
-$baulingas = [
-    'takelis_pirmas' => [
-        ['takelio_pradžia' => 'švarus'],
-        ['takelio_vidurys' => 'juosta'],
-        ['takelio_pabaiga' => [
-                'kegliu_trikamis' => [
-                    [0],
-                    [1, 0],
-                    [1, 0, 0],
-                    [1, 0, 0, 1],
-                ],
-            ],
-        ],],
-    'takelis_antras' => [
-        ['takelio_pradžia' => 'nešvarus'],
-        ['takelio_vidurys' => 'juosta'],
-        ['takelio_pabaiga' => [
-                'kegliu_trikamis' => [
-                    [0],
-                    [0, 0],
-                    [0, 0, 0],
-                    [0, 0, 0, 0],
-                ],],],],];
-var_dump($baulingas);
+$kelias = [
+    ['sukimo_krytis' => 'į_dešinę',
+        'sukimo_kampas' => 90],
+    ['sukimo_krytis' => 'į_kairę',
+        'sukimo_kampas' => 45],
+    ['sukimo_krytis' => 'į_dešinę',
+        'sukimo_kampas' => 160],
+    ['sukimo_krytis' => 'į_kairę',
+        'sukimo_kampas' => 160],
+    ['sukimo_krytis' => 'į_dešinę',
+        'sukimo_kampas' => 180],
+    ['sukimo_krytis' => 'į_dešinę',
+        'sukimo_kampas' => 40],
+];
+var_dump($kelias);
