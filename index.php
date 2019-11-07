@@ -4,20 +4,20 @@ $product = [
     [
         'vardas' => 'Petro',
         'pavarde' => 'Pizdžio',
-        'busena' => 'prap*stas',
-        'daiktas' => 'telefonas',
+        'daikto_busena' => 'prap*stas',
+        'daiktas_1' => 'telefonas',
     ],
     [
         'vardas' => 'Tomo',
         'pavarde' => 'Ablomo',
-        'busena' => 'naudojamas',
-        'daiktas' => 'buljonas',
+        'daikto_busena' => 'naudojamas',
+        'daiktas_1' => 'buljonas',
     ],
     [
         'vardas' => 'Anos',
         'pavarde' => 'Shitkovos',
-        'busena' => 'pasibaigęs',
-        'daiktas' => 'rulonas',
+        'daikto_busena' => 'pasibaigęs',
+        'daiktas_1' => 'rulonas',
     ],
 ];
 
