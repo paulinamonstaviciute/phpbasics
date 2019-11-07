@@ -2,23 +2,25 @@
 
 $product = [
     [
-        'vardas' => 'Petro',
-        'pavarde' => 'Pizdžio',
-        'daikto_busena' => 'prap*stas',
-        'daiktas_1' => 'telefonas',
+        'vardas' => 'Petras',
+        'pavarde' => 'Pizdžius',
+        'items' => [
+            'busena' => 'prap*stas',
+            'pavadinimas' => 'telefonas',
+        ],
     ],
     [
-        'vardas' => 'Tomo',
-        'pavarde' => 'Ablomo',
-        'daikto_busena' => 'naudojamas',
-        'daiktas_1' => 'buljonas',
-    ],
+        'vardas' => 'Tomas',
+        'pavarde' => 'Ablomas',
+        'items' => [
+            'busena' => 'naudojamas',
+            'pavadinimas' => 'buljonas'],],
     [
-        'vardas' => 'Anos',
-        'pavarde' => 'Shitkovos',
-        'daikto_busena' => 'pasibaigęs',
-        'daiktas_1' => 'rulonas',
-    ],
-];
+        'vardas' => 'Ana',
+        'pavarde' => 'Shitkova',
+        'items' => [
+            'busena' => 'pasibaigęs',
+            'pavadinimas' => 'rulonas']
+    ],];
 
 var_dump($product);
