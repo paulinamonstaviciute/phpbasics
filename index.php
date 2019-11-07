@@ -4,24 +4,24 @@ $spinta = [
     'pirma_lentyna' => [
         'produktai' =>
         ['produktas' => 'Kiaušiniai',
-            'produktas_kiekis' => 3],
+            'kiekis' => 3],
         ['produktas' => 'Grietinė',
-            'produktas_kiekis' => 1],
+            'kiekis' => 1],
         ['produktas' => 'Jogurtas',
-            'produktas_kiekis' => 2],
+            'kiekis' => 2],
         ['produktas' => 'Žuvis',
-            'produktas_kiekis' => 0],
+            'kiekis' => 0],
     ],
     'antra_lentyna' => [
         'produktai' =>
         ['produktas' => 'Pienas',
-            'produktas_kiekis' => 1],
+            'kiekis' => 1],
         ['produktas' => 'Kefyras',
-            'produktas_kiekis' => 0],
+            'kiekis' => 0],
         ['produktas' => 'Degtinė',
-            'produktas_kiekis' => 2],
+            'kiekis' => 2],
         ['produktas' => 'Kečupas',
-            'produktas_kiekis' => 2],
+            'kiekis' => 2],
     ],];
 
 var_dump($spinta);
