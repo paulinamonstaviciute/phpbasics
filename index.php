@@ -2,25 +2,23 @@
 
 $spinta = [
     'pirma_lentyna' => [
-        'produktai' =>
-        ['produktas' => 'Kiaušiniai',
+        ['pavadinimas' => 'Kiaušiniai',
             'kiekis' => 3],
-        ['produktas' => 'Grietinė',
+        ['pavadinimas' => 'Grietinė',
             'kiekis' => 1],
-        ['produktas' => 'Jogurtas',
+        ['pavadinimas' => 'Jogurtas',
             'kiekis' => 2],
-        ['produktas' => 'Žuvis',
+        ['pavadinimas' => 'Žuvis',
             'kiekis' => 0],
     ],
     'antra_lentyna' => [
-        'produktai' =>
-        ['produktas' => 'Pienas',
+        ['pavadinimas' => 'Pienas',
             'kiekis' => 1],
-        ['produktas' => 'Kefyras',
+        ['pavadinimas' => 'Kefyras',
             'kiekis' => 0],
-        ['produktas' => 'Degtinė',
+        ['pavadinimas' => 'Degtinė',
             'kiekis' => 2],
-        ['produktas' => 'Kečupas',
+        ['pavadinimas' => 'Kečupas',
             'kiekis' => 2],
     ],];
 
