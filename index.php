@@ -1,25 +1,26 @@
 <?php
 
-$spinta = [
-    'pirma_lentyna' => [
-        ['pavadinimas' => 'Kiaušiniai',
-            'kiekis' => 3],
-        ['pavadinimas' => 'Grietinė',
-            'kiekis' => 1],
-        ['pavadinimas' => 'Jogurtas',
-            'kiekis' => 2],
-        ['pavadinimas' => 'Žuvis',
-            'kiekis' => 0],
-    ],
-    'antra_lentyna' => [
-        ['pavadinimas' => 'Pienas',
-            'kiekis' => 1],
-        ['pavadinimas' => 'Kefyras',
-            'kiekis' => 0],
-        ['pavadinimas' => 'Degtinė',
-            'kiekis' => 2],
-        ['pavadinimas' => 'Kečupas',
-            'kiekis' => 2],
-    ],];
-
-var_dump($spinta);
+$baulingas = [
+    'takelis_pirmas' => [
+        ['takelio_pradžia' => 'švarus'],
+        ['takelio_vidurys' => 'juosta'],
+        ['takelio_pabaiga' => [
+                'kegliu_trikamis' => [
+                    [0],
+                    [1, 0],
+                    [1, 0, 0],
+                    [1, 0, 0, 1],
+                ],
+            ],
+        ],],
+    'takelis_antras' => [
+        ['takelio_pradžia' => 'nešvarus'],
+        ['takelio_vidurys' => 'juosta'],
+        ['takelio_pabaiga' => [
+                'kegliu_trikamis' => [
+                    [0],
+                    [0, 0],
+                    [0, 0, 0],
+                    [0, 0, 0, 0],
+                ],],],],];
+var_dump($baulingas);
